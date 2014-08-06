@@ -1,0 +1,18 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: 5
+  username: root
+  password:
+  host: localhost
+
+development:
+  <<: *default
+  database: jingushan_dev
+
+
+production:
+  <<: *default
+  database: jingushan_pro
+  username: jingushan
+  password: <%= ENV['JINGUSHAN_DATABASE_PASSWORD'] %>

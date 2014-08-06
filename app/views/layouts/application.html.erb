@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+	<title>金古山庄</title>
+  
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<!-- 头部 -->
+	<div id="header">
+		<div class="logo w950">
+      <%= image_tag 'logo.jpg' %>
+		</div>
+
+		<div class="header-nav">
+			<div class="w950">
+				<ul class="nav-list">
+					<li class="nav-all">
+						所有分类
+						<i class="down"></i>
+						<dl class="down-list">
+							<dd>所有宝贝</dd>
+							<dd>蔬菜配送</dd>
+							<dd>肉蛋配送</dd>
+							<dd>菜地租种</dd>
+							<dd>零售体验</dd>
+							<dd>玩转农园</dd>
+						</dl>
+					</li>
+					<li class="active">首页</li>
+					<li>蔬菜配送</li>
+					<li>肉蛋配送</li>
+					<li>菜地租种</li>
+					<li>零售体验</li>
+					<li>品牌故事</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+  
+  <%= yield %>
+
+</body>
+</html>

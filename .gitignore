@@ -1,0 +1,12 @@
+*.DS_Store
+/.DS_Store
+/.ruby-version
+/Gemfile.lock
+/.bundle
+
+/config/database.yml
+/db/schema.rb
+
+/log/*
+/log/*.log
+/tmp
